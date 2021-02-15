@@ -57,7 +57,7 @@ describe('browser.tinymce.core.keyboard.HomeEndKeysTest', () => {
       it('move caret out and at the beginning of the element', () => {
         const editor = hook.editor();
         editor.setContent('<p><a href="google.com">link</a>test</p>');
-        TinySelections.setCursor(editor, [ 0, 0, 0 ], 1);
+        TinySelections.setCursor(editor, [ 0, 0, 0 ], 2);
         TinyContentActions.keystroke(editor, Keys.home());
         TinyAssertions.assertCursor(editor, [ 0 ], 0);
       });
